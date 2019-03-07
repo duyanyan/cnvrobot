@@ -56,7 +56,7 @@ while True:
     # broadcast message to team
     matchObj = re.search(r"\.team(.*)", data)
     if matchObj:
-        team = "aramteke ashoshan dollierp dshchedr duyan gouyang guchen gszasz igulina ipinto jparrill kbidarka kgoldbla lbednar myakove nelly ngavrilo pbrilla pharvey qwang rhrazdil shiywang sradco talayan vatsal xlisovsk ysegev zpeng"
+        team = "aramteke ashoshan dollierp dshchedr duyan gouyang guchen gszasz igulina ipinto jparrill kbidarka kgoldbla lbednar myakove nelly ngavrilo pbrilla pharvey qwang rhrazdil shiywang sradco talayan vatsal xlisovsk ysegev zpeng nkononov"
         message = matchObj.group().replace(".team", team)
         s.send("PRIVMSG %s :%s\r\n" % (channel, message))
 
@@ -70,7 +70,7 @@ while True:
     # broadcast message to cnvraanana members
     matchObj = re.search(r"\.cnvraanana(.*)", data)
     if matchObj:
-        cnvraanana = "ashoshan guchen kgoldbla myakove nelly ngavrilo ysegev"
+        cnvraanana = "ashoshan guchen kgoldbla myakove nelly ngavrilo ysegev nkononov"
         message = matchObj.group().replace(".cnvraanana", cnvraanana)
         s.send("PRIVMSG %s :%s\r\n" % (channel, message))
 
@@ -112,7 +112,7 @@ while True:
     # broadcast message to network members
     matchObj = re.search(r"\.network(.*)", data)
     if matchObj:
-        network = "duyan myakove ysegev"
+        network = "duyan myakove ysegev nkononov"
         message = matchObj.group().replace(".network", network)
         s.send("PRIVMSG %s :%s\r\n" % (channel, message))
 
@@ -133,7 +133,7 @@ while True:
     # broadcast message to ecosystem members
     matchObj = re.search(r"\.ecosystem(.*)", data)
     if matchObj:
-        ecosystem = "ashoshan lbednar dollierp vparekh"
+        ecosystem = "ashoshan lbednar dollierp vparekh talayan"
         message = matchObj.group().replace(".ecosystem", ecosystem)
         s.send("PRIVMSG %s :%s\r\n" % (channel, message))
 
