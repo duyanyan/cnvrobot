@@ -56,7 +56,7 @@ while True:
     # broadcast message to team
     matchObj = re.search(r"\.team(.*)", data)
     if matchObj:
-        team = "aramteke ashoshan dollierp dshchedr duyan gouyang guchen gszasz igulina ipinto jparrill kbidarka kgoldbla lbednar myakove nelly ngavrilo pbrilla pharvey qwang rhrazdil sradco talayan vatsal xlisovsk ysegev zpeng nkononov ycui shanks ginger zleng"
+        team = "aramteke ashoshan dollierp dshchedr duyan gouyang guchen gszasz igulina ipinto jparrill kbidarka kgoldbla lbednar myakove nelly ngavrilo pbrilla pharvey qwang rhrazdil sradco talayan vatsal xlisovsk ysegev zpeng nkononov ycui shanks ginger zleng akalenyu"
         message = matchObj.group().replace(".team", team)
         s.send("PRIVMSG %s :%s\r\n" % (channel, message))
 
@@ -70,7 +70,7 @@ while True:
     # broadcast message to cnvraanana members
     matchObj = re.search(r"\.cnvraanana(.*)", data)
     if matchObj:
-        cnvraanana = "ashoshan guchen kgoldbla myakove nelly ngavrilo ysegev nkononov ginger"
+        cnvraanana = "ashoshan guchen kgoldbla myakove nelly ngavrilo ysegev nkononov ginger akalenyu"
         message = matchObj.group().replace(".cnvraanana", cnvraanana)
         s.send("PRIVMSG %s :%s\r\n" % (channel, message))
 
@@ -119,7 +119,7 @@ while True:
     # broadcast message to storage members
     matchObj = re.search(r"\.storage(.*)", data)
     if matchObj:
-        storage = "kgoldbla ngavrilo qwang ycui shanks zleng"
+        storage = "kgoldbla ngavrilo qwang ycui shanks zleng akalenyu"
         message = matchObj.group().replace(".storage", storage)
         s.send("PRIVMSG %s :%s\r\n" % (channel, message))
 
